@@ -5,7 +5,7 @@
 
 # Запуск
 Пример запуска:
-``./build/process_monitor Telegram zoom`` 
+``./build/TaskManager Telegram zoom`` 
 # Тесты
 
 Тесты находятся в test/ и реализованы через assertы.
