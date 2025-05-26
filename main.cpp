@@ -1,19 +1,17 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <set>
-#include <csignal>
 #include "ProcessMonitor.h"
 #include "UIManager.h"
+#include <csignal>
+#include <fstream>
+#include <iostream>
+#include <set>
+#include <sstream>
+#include <string>
 
 ProcessMonitor global_monitor;
 
-void handle_signal(int) {
-    global_monitor.stop();
-}
+void handle_signal(int) { global_monitor.stop(); }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     if (argc < 2) {
         std::cerr << "Usage: ./TaskManager process_name1 [process_name2 ...]\n";
         return 1;

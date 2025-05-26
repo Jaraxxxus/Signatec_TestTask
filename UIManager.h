@@ -9,11 +9,11 @@ class ProcessMonitor;
 
 class UIManager {
 public:
-    UIManager(ProcessMonitor& monitor);
+    UIManager(ProcessMonitor &monitor);
     void run();
+
 private:
-    ProcessMonitor& monitor;
+    ProcessMonitor &monitor;
 };
 
-
-#endif //UNTITLED4_UIMANAGER_H
+#endif // UNTITLED4_UIMANAGER_H

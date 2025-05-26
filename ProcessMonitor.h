@@ -7,39 +7,40 @@
 
 #pragma once
 
-#include "UIManager.h"
 #include "ProcInfo.h"
-#include <set>
-#include <vector>
-#include <mutex>
-#include <condition_variable>
-#include<map>
-#include<atomic>
-#include <thread>
+#include "UIManager.h"
+#include <atomic>
 #include <cctype>
+#include <condition_variable>
+#include <map>
+#include <mutex>
+#include <set>
+#include <thread>
+#include <vector>
 
 class ProcessMonitor {
 public:
     ProcessMonitor();
-    void start(const std::set<std::string>& process_names);
+    void start(const std::set<std::string> &process_names);
     void stop();
-    bool parseStatLine(const std::string& line, ProcInfo& info);
-    bool parseStatusForVmRSS(const std::vector<std::string>& lines, ProcInfo& info);
-    bool getProcInfoFromStrings(const std::string& stat_content,
-                                                const std::vector<std::string>& status_lines,
-                                                ProcInfo& info);
-    bool getProcInfo(pid_t pid, ProcInfo& info);
-    std::vector<pid_t> findPidsByName(const std::string& name);
-    const std::map<ProcKey, ProcInfo>& getProcDataForTest() const {
+    bool parseStatLine(const std::string &line, ProcInfo &info);
+    bool parseStatusForVmRSS(const std::vector<std::string> &lines,
+                             ProcInfo &info);
+    bool getProcInfoFromStrings(const std::string &stat_content,
+                                const std::vector<std::string> &status_lines,
+                                ProcInfo &info);
+    bool getProcInfo(pid_t pid, ProcInfo &info);
+    std::vector<pid_t> findPidsByName(const std::string &name);
+    const std::map<ProcKey, ProcInfo> &getProcDataForTest() const {
         return proc_data;
     }
-    const std::set<std::string>& getMissingProcesses() const {
+    const std::set<std::string> &getMissingProcesses() const {
         return missing_processes;
     }
 
 private:
-    void processWatcher(const std::string& proc_name);
-    void monitorSingleProcess(const std::string& proc_name, pid_t pid);
+    void processWatcher(const std::string &proc_name);
+    void monitorSingleProcess(const std::string &proc_name, pid_t pid);
 
     std::mutex data_mutex;
     std::condition_variable cv;
@@ -55,5 +56,4 @@ private:
     friend class UIManager;
 };
 
-
-#endif //UNTITLED4_PROCESSMONITOR_H
+#endif // UNTITLED4_PROCESSMONITOR_H

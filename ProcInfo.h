@@ -5,8 +5,8 @@
 #ifndef UNTITLED4_PROCINFO_H
 #define UNTITLED4_PROCINFO_H
 
-#include <utility>
 #include <string>
+#include <utility>
 
 struct ProcInfo {
     long utime = 0;
@@ -18,7 +18,4 @@ struct ProcInfo {
 
 using ProcKey = std::pair<std::string, pid_t>;
 
-
-
-
-#endif //UNTITLED4_PROCINFO_H
+#endif // UNTITLED4_PROCINFO_H
