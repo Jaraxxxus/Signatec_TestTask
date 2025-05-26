@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+# CLion и JetBrains IDE
+.idea/
+*.iml
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Каталоги сборки
+cmake-build-*/
+build/
+out/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Файлы CMake и их временные данные
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Логи и временные файлы
+*.log
+*.swp
+*~
 
-# Fortran module files
-*.mod
-*.smod
+# Mac OS файлы (если используешь macOS)
+.DS_Store
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Другие временные файлы
+*.tmp
+*.temp
+*.bak
+*.orig
 
-# Executables
-*.exe
-*.out
-*.app
+# Конфигурации запусков
+*.run.xml
+
+# CLion specific
+.idea/*
+!.idea/.name
+!.idea/compiler.xml
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/workspace.xml
+!.idea/dictionaries/
+!.idea/inspectionProfiles/
+
+# Исключаем workspace.xml чтобы не коммитить пользовательские настройки
+.idea/workspace.xml
+
+# Исключаем папку с кешем тестов
+.idea/caches/
+
+# Исключаем каталоги с настройками профиля и сборки
+.idea/libraries/
+.idea/tasks.xml
+
