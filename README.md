@@ -11,5 +11,7 @@
 Тесты находятся в test/ и реализованы через assertы.
 
 ## Комманда для сборки:
+```
 cmake -B build
 cmake --build build --target run_tests
+```
