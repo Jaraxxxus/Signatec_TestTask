@@ -3,7 +3,6 @@ project(TestTask)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Заголовки
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 # Основная программа
@@ -13,7 +12,7 @@ add_executable(TaskManager
         UIManager.cpp
 )
 
-# Тесты (отдельная цель!)
+# Тесты
 add_executable(process_monitor_tests
         test/test.cpp
         ProcessMonitor.cpp

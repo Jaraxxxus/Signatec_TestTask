@@ -1,17 +1,11 @@
 #include "UIManager.h"
 #include "ProcessMonitor.h"
 #include <iostream>
-#include <fstream>
 #include <set>
 #include <iomanip>
 #include <vector>
 #include <string>
 #include <mutex>
-#include <unistd.h>
-#include <map>
-#include <set>
-#include <atomic>
-#include <condition_variable>
 
 UIManager::UIManager(ProcessMonitor& monitor) : monitor(monitor) {}
 
@@ -25,7 +19,7 @@ void UIManager::run() {
         }
 
         if (!monitor.updated.exchange(false)) {
-            continue;  // ничего не изменилось
+            continue;
         }
 
         std::cout << "\033[2J\033[H";

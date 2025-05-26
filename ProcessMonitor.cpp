@@ -5,19 +5,13 @@
 #include "ProcessMonitor.h"
 
 #include <chrono>
-#include <condition_variable>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
-#include <map>
-#include <mutex>
 #include <set>
 #include <sstream>
 #include <string>
 #include <unistd.h>
-#include <vector>
-#include <csignal>
-#include <iomanip>
 #include <algorithm>
 
 using namespace std::chrono_literals;

@@ -1,20 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include <thread>
-#include <vector>
 #include <string>
 #include <sstream>
-#include <mutex>
-#include <filesystem>
-#include <chrono>
-#include <unistd.h>
-#include <map>
 #include <set>
-#include <atomic>
-#include <condition_variable>
-#include <iomanip>
 #include <csignal>
-#include <cmath>
 #include "ProcessMonitor.h"
 #include "UIManager.h"
 
