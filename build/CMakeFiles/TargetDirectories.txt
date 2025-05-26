@@ -1,0 +1,4 @@
+/home/sazonov99/CLionProjects/untitled4/build/CMakeFiles/untitled4.dir
+/home/sazonov99/CLionProjects/untitled4/build/CMakeFiles/process_monitor_tests.dir
+/home/sazonov99/CLionProjects/untitled4/build/CMakeFiles/edit_cache.dir
+/home/sazonov99/CLionProjects/untitled4/build/CMakeFiles/rebuild_cache.dir

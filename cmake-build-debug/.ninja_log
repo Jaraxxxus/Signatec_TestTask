@@ -1,0 +1,8 @@
+# ninja log v6
+1	1312	1748211149541517443	CMakeFiles/untitled4.dir/ProcessMonitor.cpp.o	e03aa3d5c7fbc47f
+1	4	1748048535778251145	clean	b3309418a9a838e0
+2	1012	1748211085500364765	CMakeFiles/untitled4.dir/UIManager.cpp.o	3fa58ab3c1038a31
+1312	1402	1748211150853541043	untitled4	7a997066315dd5bb
+1	1003	1748211085500364765	CMakeFiles/untitled4.dir/main.cpp.o	272f8a6f46ba3dc4
+0	21	1748211990899727520	build.ninja	7660bf9bcb5a19cf
+1	1146	1748210757346427558	CMakeFiles/untitled4.dir/test/test.cpp.o	9ca67a6fa0063d3e
